@@ -1,18 +1,6 @@
-let contElement = document.getElementById('container');
-
-for ( let i = 0 ; i < 100 ; i++ ) {
-
-    const square = 
-}
-
-
-
-
-
-
 const playButton = document.getElementById('play');
 
-playButton.addEventListener('click'
+playButton.addEventListener('click',
     function () {
 
 
@@ -22,6 +10,20 @@ playButton.addEventListener('click'
 
 
         if (difficulty == "easy") {
+
+            for (let i = 1; i <= 100; i++) {
+
+                const containerElement = document.getElementById('container');
+
+                containerElement.innerHTML += '<div class="square">' + i + '</div>';
+
+                //let square = document.createElement('square');
+
+                //square.innerHTML += '<div class="square">' + i + '</div>';
+
+                //document.getElementById("container").appendChild(square);
+
+            }
             
         } else if (difficulty == "medium"){
             

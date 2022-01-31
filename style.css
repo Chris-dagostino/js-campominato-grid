@@ -45,23 +45,21 @@ main {
     width: 500px;
     margin: 0px auto;
     border: 1px solid #fff;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #grid {
     height: 500px;   
 }
 
-#grid::after {
-    display: table;
-    content: "";
-    clear: both;
-}
-
 .square {
+    display: flex;
     width: calc(100% / 8);
     height: calc(100% / 8);
     border: 1px solid #fff;
-    float: left;
+    justify-content: center;
+    align-items: center;    
     
 }
 
