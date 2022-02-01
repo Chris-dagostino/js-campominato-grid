@@ -53,14 +53,13 @@ main {
     height: 500px;   
 }
 
+
 .square {
     display: flex;
     width: calc(100% / 8);
     height: calc(100% / 8);
     border: 1px solid #fff;
-    justify-content: center;
-    align-items: center;    
-    
+    display: inline-block;
 }
 
 .clicked {
@@ -68,6 +67,10 @@ main {
     color: #fff;
 }
 
+
+.bomb {
+    background-color: crimson;
+}
 /*!inizio footer*/
 
 .credit {
